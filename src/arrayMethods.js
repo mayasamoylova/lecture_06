@@ -30,8 +30,8 @@ window.filter = function (arr, callback) {
 };
 window.map = function (arr, callback) {
   var newArr = [];
-  for (var i = 0; i < arr.length; i++){
+  for (var i = 0; i < arr.length; i++) {
 	  newArr.push(callback(arr[i], i, arr));
   }
-  return newArr;	
+  return newArr;
 };
