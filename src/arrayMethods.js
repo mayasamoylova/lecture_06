@@ -2,7 +2,7 @@ window.every = function (arr, callback) {
   for (var i = 0; i < arr.length; i++) {
     if (!callback(arr[i], i, arr)) {
       return false;
-	}
+    }
   }
   return true;
 };
@@ -10,7 +10,7 @@ window.some = function (arr, callback) {
   for (var i = 0; i < arr.length; i++) {
     if (callback(arr[i], i, arr)) {
       return true;
-	}
+    }
   }
   return false;
 };
@@ -30,9 +30,8 @@ window.filter = function (arr, callback) {
 };
 window.map = function (arr, callback) {
   var newArr = [];
-	for(var i = 0; i < arr.length; i++){
+  for (var i = 0; i < arr.length; i++){
 	  newArr.push(callback(arr[i], i, arr));
   }
-
   return newArr;	
 };
